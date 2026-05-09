@@ -1,0 +1,81 @@
+.boutique {
+  background-color: var(--color-espresso);
+  border-top: 1px solid rgba(201, 164, 106, 0.1);
+}
+
+.boutique-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 6rem;
+  align-items: center;
+}
+
+.contact-details {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.contact-item {
+  display: flex;
+  gap: 1.5rem;
+  align-items: flex-start;
+}
+
+.contact-icon {
+  margin-top: 0.25rem;
+}
+
+.mb-1 { margin-bottom: 0.5rem; }
+.mb-5 { margin-bottom: 3rem; }
+.mt-5 { margin-top: 3rem; }
+.gap-2 { gap: 0.5rem; }
+
+.boutique-cta {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.boutique-visuals {
+  position: relative;
+  height: 600px;
+}
+
+.boutique-image-main {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 80%;
+  height: 80%;
+}
+
+.boutique-image-main img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.boutique-map {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 60%;
+  height: 40%;
+  padding: 0.5rem;
+  z-index: 2;
+}
+
+@media (max-width: 992px) {
+  .boutique-container {
+    grid-template-columns: 1fr;
+    gap: 4rem;
+  }
+  
+  .boutique-cta {
+    flex-direction: column;
+  }
+  
+  .boutique-visuals {
+    height: 400px;
+  }
+}

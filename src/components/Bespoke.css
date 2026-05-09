@@ -1,0 +1,55 @@
+.bespoke {
+  background-color: var(--color-espresso);
+  position: relative;
+  overflow: hidden;
+}
+
+.bespoke-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 6rem;
+  align-items: center;
+}
+
+.bespoke-image-wrapper {
+  position: relative;
+  height: 80vh;
+  overflow: hidden;
+}
+
+.bespoke-parallax-inner {
+  position: absolute;
+  top: -10%;
+  left: 0;
+  width: 100%;
+  height: 120%;
+}
+
+.bespoke-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(0.9);
+}
+
+.bespoke-content {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  padding-right: 2rem;
+}
+
+@media (max-width: 992px) {
+  .bespoke-container {
+    grid-template-columns: 1fr;
+    gap: 4rem;
+  }
+  
+  .bespoke-image-wrapper {
+    height: 50vh;
+  }
+  
+  .bespoke-content {
+    padding-right: 0;
+  }
+}
